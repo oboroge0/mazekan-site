@@ -7,90 +7,171 @@
   <meta name="description" content="飲み会の割り勘を3ステップで。現金・PayPay・カード・振込が混ざっていても、誰が誰にいくら渡せばいいかを最小の回数で計算します。相手はアプリ不要。">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <img src="assets/icon-180.png" alt="" width="34" height="34">
+    <span class="brand"><a href="index.html">マゼカン</a></span>
+    <nav>
+      <a href="#features">できること</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシー</a>
+    </nav>
+  </header>
+
   <div class="wrap">
-    <header class="site-header">
-      <img src="assets/icon-180.png" alt="" width="36" height="36">
-      <span class="brand">マゼカン</span>
-      <nav>
-        <a href="support.html">サポート</a>
-        <a href="privacy.html">プライバシー</a>
-      </nav>
-    </header>
-
     <section class="hero">
-      <img class="app-icon" src="assets/icon-180.png" alt="マゼカンのアプリアイコン" width="120" height="120">
-      <h1><span class="kicker">割り勘アプリ</span>現金の人がいても、<br>丸く収まる。</h1>
-      <p class="sub">飲み会の割り勘を<strong>3ステップ</strong>で。誰が誰にいくら渡せばいいかを、<strong>いちばん少ない回数</strong>で計算します。</p>
-      <div class="pills">
-        <span class="pill cash">現金</span>
-        <span class="pill paypay">PayPay</span>
-        <span class="pill credit">カード</span>
-        <span class="pill bank">振込</span>
-        <span class="pill ghost">ぜんぶ混ぜてOK</span>
+      <div class="pill-field" aria-hidden="true">
+        <span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span>
       </div>
-      <div class="store-badge" aria-label="App Store 近日公開">
-        <span class="apple-mark">&#63743;</span>
-        <span><span class="small">COMING SOON</span><span class="big">App Store 近日公開</span></span>
-      </div>
-      <p class="store-note">iOS 17以降 / 登録不要・無料ではじめられます</p>
-    </section>
 
-    <section>
-      <h2 class="section-title">できること</h2>
+      <div class="hero-copy">
+        <p class="kicker">割り勘アプリ・登録不要</p>
+        <h1>現金の人がいても、<br><span class="maru">丸く<svg viewBox="0 0 200 90" aria-hidden="true"><ellipse cx="100" cy="45" rx="96" ry="40"/></svg></span>収まる。</h1>
+        <p class="sub">飲み会の割り勘を<strong>3ステップ</strong>で。誰が誰にいくら渡せばいいかを、<strong>いちばん少ない回数</strong>で計算します。相手はアプリ不要。</p>
+        <div class="chip-row" aria-hidden="true">
+          <span class="chip cash">現金</span>
+          <span class="chip paypay">PayPay</span>
+          <span class="chip credit">カード</span>
+          <span class="chip bank">振込</span>
+          <span class="chip ghost">ぜんぶ混ぜてOK</span>
+        </div>
+        <div class="cta-row">
+          <a class="store-badge" href="#" aria-label="App Store 近日公開">
+            <span class="apple-mark">&#63743;</span>
+            <span><span class="small">COMING SOON</span><span class="big">App Store 近日公開</span></span>
+          </a>
+          <a class="cta-ghost" href="#features">できることを見る ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/hero-phone.png" alt="マゼカンの精算プラン画面。佐藤は鈴木にPayPayで4,000円、山田は鈴木にPayPayで4,000円と表示されている" width="400">
+      </div>
+    </section>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>現金</span><b>×</b><span>PayPay</span><b>×</b><span>カード</span><b>×</b><span>振込</span><b>→</b><span>丸く収まる。</span><span>最小の送金回数</span><b>/</b><span>登録不要</span><b>/</b><span>相手はアプリいらず</span><b>/</b>
+      <span>現金</span><b>×</b><span>PayPay</span><b>×</b><span>カード</span><b>×</b><span>振込</span><b>→</b><span>丸く収まる。</span><span>最小の送金回数</span><b>/</b><span>登録不要</span><b>/</b><span>相手はアプリいらず</span><b>/</b>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="features">
+      <h2 class="section-title reveal">払い方バラバラ問題、<br><span class="accent">ぜんぶ</span>この中で解決。</h2>
+      <p class="section-lede reveal">「オレ現金しかない」「カードでまとめて払っちゃった」— 幹事を悩ませる夜のための4つの道具。</p>
       <div class="features">
-        <div class="feature">
+        <div class="feature reveal">
           <span class="tag">混ぜてOK</span>
           <h3>払い方がバラバラでも大丈夫</h3>
           <p>現金の人、PayPayの人、カードでまとめて払った人。使える手段が合わない相手には、間に入ってくれる人まで自動で提案します。</p>
         </div>
-        <div class="feature">
+        <div class="feature reveal">
           <span class="tag">相手はアプリ不要</span>
           <h3>LINEに貼るだけ</h3>
-          <p>精算プランはテキストでコピーして共有。「佐藤 → 鈴木 PayPay ¥4,700」— 受け取る側は何もインストールしなくてOK。</p>
+          <p>精算プランはテキストでコピーして共有。「佐藤 → 鈴木 PayPay ¥4,000」— 受け取る側は何もインストールしなくてOK。</p>
         </div>
-        <div class="feature">
+        <div class="feature reveal">
           <span class="tag">回収管理</span>
           <h3>回収漏れ、なくなる</h3>
           <p>「渡した」チェックと回収待ちダッシュボードで、誰からいくら受け取っていないかが一目。3日後のリマインダー通知つき。</p>
         </div>
-        <div class="feature">
+        <div class="feature reveal">
           <span class="tag">2次会対応</span>
           <h3>まとめて差し引き精算</h3>
           <p>1次会と2次会で幹事が違っても、複数の会をまとめて差し引き。お互いの貸し借りを最小の送金に圧縮します。</p>
         </div>
       </div>
     </section>
+  </div>
 
-    <section>
-      <h2 class="section-title">つかいかた</h2>
-      <p class="section-lede">レジ前で決めるのは「誰が払うか」だけ。あとは歩きながら3ステップ。</p>
-      <div class="steps">
-        <div class="step"><h3>全体でいくらだった？</h3><p>金額をテンキーで入力。100円単位の丸めもここで。</p></div>
-        <div class="step"><h3>誰と行った？</h3><p>名前と使える払い方を選ぶだけ。前回のメンバーは1タップで呼び出し。</p></div>
-        <div class="step"><h3>レジでどう払った？</h3><p>払った人と金額を記録。その場で渡したお金は精算済みに。</p></div>
-      </div>
-      <div class="shots">
-        <figure class="shot"><img src="assets/screen-amount.png" alt="金額入力画面" loading="lazy"><figcaption>大きなテンキーで3秒入力</figcaption></figure>
-        <figure class="shot"><img src="assets/screen-members.png" alt="メンバーと払い方の選択画面" loading="lazy"><figcaption>払い方はチップをタップ</figcaption></figure>
-        <figure class="shot"><img src="assets/screen-payments.png" alt="支払い記録画面" loading="lazy"><figcaption>立て替えもその場払いも記録</figcaption></figure>
+  <div class="wrap">
+    <section class="demo-band reveal">
+      <div class="wrap">
+        <div>
+          <h2 class="section-title">精算の気持ちよさ、<br>ここで試せます。</h2>
+          <p class="section-lede">アプリの精算プランはこんなカード。「渡した」を押して、全部丸く収めてみてください。</p>
+          <p class="demo-note">※ これはデモです。実際のアプリでは編集も共有もできます。</p>
+        </div>
+        <div class="demo-card" id="demo">
+          <h4>こう払えば丸く収まる</h4>
+          <div class="demo-row">
+            <span class="who">佐藤 は 鈴木 に</span>
+            <span class="pay paypay">PayPay</span>
+            <span class="amount">¥4,000</span>
+            <button type="button">渡した</button>
+          </div>
+          <div class="demo-row">
+            <span class="who">山田 は 鈴木 に</span>
+            <span class="pay paypay">PayPay</span>
+            <span class="amount">¥4,000</span>
+            <button type="button">渡した</button>
+          </div>
+          <div class="demo-row">
+            <span class="who">田中 は 鈴木 に</span>
+            <span class="pay cash">現金</span>
+            <span class="amount">¥4,000</span>
+            <button type="button">渡した</button>
+          </div>
+          <p class="demo-fin">🎉 全部丸く収まった！</p>
+        </div>
       </div>
     </section>
+  </div>
 
-    <section class="trust">
-      <h2>あなたのデータは、あなたのiPhoneの中だけ。</h2>
+  <div class="wrap">
+    <section>
+      <h2 class="section-title reveal">画面はこんな感じ。</h2>
+      <p class="section-lede reveal">横にスワイプしてどうぞ。</p>
+      <div class="gallery reveal">
+        <img src="assets/mkt-01_hero_list.png" alt="イベント一覧と回収待ちダッシュボード" loading="lazy">
+        <img src="assets/mkt-05_members.png" alt="メンバーと払い方の入力画面" loading="lazy">
+        <img src="assets/mkt-03_payments.png" alt="立て替えとその場払いの記録画面" loading="lazy">
+        <img src="assets/mkt-02_plan.png" alt="精算プラン画面" loading="lazy">
+        <img src="assets/mkt-04_graph.png" alt="お金の流れの関係図" loading="lazy">
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section class="trust reveal">
+      <h2>あなたのデータは、<br>あなたのiPhoneの中だけ。</h2>
       <p>マゼカンはアカウント登録不要。割り勘の記録はすべて端末内に保存され、サーバーには送信されません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
     </section>
-
-    <footer class="site-footer">
-      <nav>
-        <a href="support.html">サポート</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-      </nav>
-      <p>© 2026 マゼカン</p>
-    </footer>
   </div>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+    <p>© 2026 マゼカン</p>
+  </footer>
+
+  <script>
+    // スクロールリビール
+    const io = new IntersectionObserver(entries => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }, { threshold: .15 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+    // 「渡した」デモ
+    const demo = document.getElementById("demo");
+    demo?.querySelectorAll(".demo-row button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const row = btn.closest(".demo-row");
+        row.classList.toggle("done");
+        btn.textContent = row.classList.contains("done") ? "渡した ✓" : "渡した";
+        const allDone = [...demo.querySelectorAll(".demo-row")].every(r => r.classList.contains("done"));
+        demo.querySelector(".demo-fin").classList.toggle("show", allDone);
+      });
+    });
+  </script>
 </body>
 </html>

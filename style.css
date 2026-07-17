@@ -391,6 +391,7 @@ section { padding: 96px 0; }
 .site-footer nav { display: flex; justify-content: center; gap: 26px; margin-bottom: 16px; }
 .site-footer a { color: var(--ink-soft); text-decoration: none; font-weight: 700; }
 .site-footer a:hover { color: var(--purple); }
+.site-footer .legal-note { font-size: 11px; color: var(--ink-faint); max-width: 46em; margin: 10px auto 0; }
 
 /* ---------- 下層ページ (privacy / support) ---------- */
 .doc { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
